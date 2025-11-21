@@ -1,5 +1,5 @@
 <h1 align="center">Завдання №3</h1>
-<h2 align="center">Створити простий Python-файл app.py</h2>
+<h2 align="center">Створити простий CSharp-файл app.cs</h2>
 <p align="center">
 <img src="https://github.com/user-attachments/assets/a8fef10d-c7f5-4b26-b26f-cb93fd9096db">
 </p>
@@ -15,3 +15,4 @@
 <p align="center">
 <img src="https://github.com/user-attachments/assets/201b7afa-1a4e-4eff-ba25-1bec36771a4f">
 </p>
+
