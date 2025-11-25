@@ -95,5 +95,7 @@ volumes:
 ![](https://github.com/user-attachments/assets/bb74559d-2feb-49d6-92b1-9df4a219dbef)
 ### Створення БД
 **Перейти в контейнер PostgreSQL**
+
 ![](https://github.com/user-attachments/assets/21b4080e-45d3-4acf-a85e-43d538ce3ef0)
+
 
