@@ -8,6 +8,7 @@
 - Запустити:
 ``docker compose up``
 ## Виконання
+### Program.cs
 Для прикладу було створено простий ***C# .NET 9 Web API*** для роботи з базою даних ***PostgreSQL***.
 ```csharp
 using Npgsql;
@@ -42,9 +43,27 @@ app.MapGet("/users", async () =>
 
 app.Run();
 ```
-***Get /users*** повертає список користувачів у форматі ***JSON***
+***Get /users*** повертає список користувачів у форматі ***JSON***.
+### Dockerfile
+```Dockerfile
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+WORKDIR /app
+
+COPY *.csproj ./
+RUN dotnet restore
+
+COPY . ./
+RUN dotnet publish -c Release -o out
+
+FROM mcr.microsoft.com/dotnet/aspnet:9.0
+WORKDIR /app
+COPY --from=build /app/out .
+
+ENTRYPOINT ["dotnet", "backend.dll"]
+```
 <p align="center">
 <img src="https://github.com/user-attachments/assets/a8fef10d-c7f5-4b26-b26f-cb93fd9096db">
 </p>
+
 
 
