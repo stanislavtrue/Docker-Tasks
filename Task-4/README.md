@@ -94,8 +94,11 @@ volumes:
 ### Запуск
 ![](https://github.com/user-attachments/assets/bb74559d-2feb-49d6-92b1-9df4a219dbef)
 ### Створення БД
-**Перейти в контейнер PostgreSQL**
+**- Перейти в контейнер PostgreSQL**
 
 ![](https://github.com/user-attachments/assets/21b4080e-45d3-4acf-a85e-43d538ce3ef0)
+**- Cтворити базу даних**
+![](https://github.com/user-attachments/assets/9f440c0e-ae8c-4e64-8de3-000185983354)
+
 
 
