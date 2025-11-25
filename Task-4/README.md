@@ -102,12 +102,13 @@ volumes:
 
 ![](https://github.com/user-attachments/assets/9f440c0e-ae8c-4e64-8de3-000185983354)
 
-**- Створити таблицю та внести дані
+**- Створити таблицю та внести дані**
 
 ![](https://github.com/user-attachments/assets/73807a99-f355-4c9a-b360-c6e0491bab99)
 
 ### Перевірка роботи
 ![](https://github.com/user-attachments/assets/71130e8c-d913-44fa-89ed-302a86ebed02)
+
 
 
 
