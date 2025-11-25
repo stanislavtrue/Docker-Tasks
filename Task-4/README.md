@@ -61,6 +61,7 @@ COPY --from=build /app/out .
 
 ENTRYPOINT ["dotnet", "backend.dll"]
 ```
+### docker-compose.yml
 ```docker-compose.yml
 services:
   backend:
@@ -84,9 +85,16 @@ services:
 volumes:
   db_data:
 ```
+### Налаштування підключення до БД 
+```json
+"ConnectionStrings": {
+   "Default": "Host=db;Port=5432;Database=backend_db_1;Username=postgres;Password=1234"
+}
+```
 <p align="center">
 <img src="https://github.com/user-attachments/assets/a8fef10d-c7f5-4b26-b26f-cb93fd9096db">
 </p>
+
 
 
 
