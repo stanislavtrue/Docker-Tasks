@@ -61,9 +61,33 @@ COPY --from=build /app/out .
 
 ENTRYPOINT ["dotnet", "backend.dll"]
 ```
+```docker-compose.yml
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    container_name: notes_backend
+    depends_on:
+      - db
+  db:
+    image: docker.io/library/postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1234
+    volumes:
+      - db_data:/var/lib/postgresql/data
+volumes:
+  db_data:
+```
 <p align="center">
 <img src="https://github.com/user-attachments/assets/a8fef10d-c7f5-4b26-b26f-cb93fd9096db">
 </p>
+
 
 
 
