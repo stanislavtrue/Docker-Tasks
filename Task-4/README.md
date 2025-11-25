@@ -92,9 +92,8 @@ volumes:
 }
 ```
 ### Запуск
-<p align="center">
-<img src="https://github.com/user-attachments/assets/bb74559d-2feb-49d6-92b1-9df4a219dbef">
-</p>
+![](https://github.com/user-attachments/assets/bb74559d-2feb-49d6-92b1-9df4a219dbef)
+
 
 
 
